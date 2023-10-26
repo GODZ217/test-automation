@@ -1,0 +1,9 @@
+stages:
+  - push_to_branch_main
+
+push_to_branch_b:
+  stage: push_to_branch_main
+  script:
+    - git checkout master
+    - git pull 
+    - git push origin master:main # Push perubahan ke branch B
